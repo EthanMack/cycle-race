@@ -177,8 +177,9 @@ function redCyclists(){
 function reset(){
   gameState = PLAY;
   gameOver.visible = false;
-  mainCyclist.changeAnimation("mainRacerImg1",mainRacerImg2);
-  
+ mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+  mainCyclist.scale=0.07;
+
   pinkCG.destroyEach();
   yellowCG.destroyEach();
   redCG.destroyEach();
